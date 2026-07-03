@@ -1,0 +1,52 @@
+# Day 02 - DNS Analysis with Wireshark
+
+## Objective
+Learn how the Domain Name System (DNS) translates domain names into IP addresses using Wireshark.
+
+## Tool Used
+- Wireshark
+
+## Operating System
+- Kali Linux
+
+## Filter Used
+```
+dns
+```
+
+## Practical Task
+1. Started a packet capture on the wlan0 interface.
+2. Opened the terminal and ran:
+```
+nslookup google.com
+```
+3. Returned to Wireshark.
+4. Applied the `dns` display filter.
+5. Examined the DNS Query and DNS Response packets.
+6. Expanded the packet details to inspect the returned IP addresses.
+
+## What I Learned
+- DNS stands for Domain Name System.
+- DNS translates human-readable domain names into IP addresses.
+- A DNS Query is sent from my computer to a DNS server.
+- A DNS Response contains the IP address associated with the requested domain.
+- Wireshark allows analysts to inspect DNS traffic and understand how name resolution works.
+
+## Key Observation
+I observed the DNS response packet for `chatgpt.com`, which contained the IPv6 addresses returned by the DNS server.
+
+## Why This Matters
+As a Security Analyst, understanding DNS traffic is important because attackers often use malicious or suspicious domain names. Monitoring DNS requests can help identify phishing attempts, malware communication, or other suspicious network activity.
+
+## Skills Practiced
+- Packet Capture
+- Packet Analysis
+- DNS Analysis
+- Network Traffic Inspection
+- Wireshark Navigation
+
+## Screenshot
+See `dns-wireshark.png`
+
+## Conclusion
+Today I learned how DNS works behind the scenes and how Wireshark can be used to capture and analyze DNS traffic. This practical exercise helped me understand how computers locate websites on the internet.
