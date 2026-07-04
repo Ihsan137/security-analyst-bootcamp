@@ -1,0 +1,27 @@
+# Day 3 - TCP Three-Way Handshake
+
+## Objective
+Learn how TCP establishes a reliable connection before data is exchanged.
+
+## What I Learned
+- TCP stands for Transmission Control Protocol.
+- TCP is connection-oriented.
+- The client starts the connection.
+- The server replies with SYN-ACK.
+- The client finishes the handshake with ACK.
+- After the handshake, TLS begins encrypting communication.
+
+## Wireshark Filters Used
+tcp
+tcp.stream == 7
+tcp.flags.syn == 1
+
+## Skills Practiced
+- Capturing TCP traffic
+- Identifying SYN packets
+- Identifying SYN-ACK packets
+- Identifying ACK packets
+- Following a TCP stream
+
+## Reflection
+Today I learned how every secure website first creates a TCP connection before encrypted communication begins. Seeing the three-way handshake in Wireshark helped me understand how computers establish reliable communication.
