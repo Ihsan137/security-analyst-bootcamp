@@ -1,0 +1,27 @@
+# Day 4 - HTTP vs HTTPS Analysis
+
+## Objective
+Understand the difference between HTTP and HTTPS using Wireshark.
+
+## What I Learned
+
+- HTTP stands for HyperText Transfer Protocol.
+- HTTPS stands for HyperText Transfer Protocol Secure.
+- HTTP traffic is readable.
+- HTTPS traffic is encrypted using TLS.
+- GET requests are used by the browser to request web resources.
+- 200 OK indicates that the server successfully processed the request.
+- Security Analysts can inspect metadata in encrypted traffic even though the content remains protected.
+
+## Practical
+
+- Captured HTTP traffic using http://neverssl.com
+- Captured HTTPS traffic using ChatGPT.
+- Compared HTTP GET requests with encrypted TLS Application Data.
+
+## Skills Practiced
+
+- Wireshark Filters
+- HTTP Analysis
+- TLS Analysis
+- Network Traffic Investigation
