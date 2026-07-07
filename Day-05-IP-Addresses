@@ -1,0 +1,25 @@
+# Day 05 - IP Address Analysis
+
+## Objective
+Learn how IP addresses identify devices on a network and analyze IPv4 packets using Wireshark.
+
+## What I Learned
+
+- Difference between Public and Private IP addresses.
+- Source IP identifies the sender.
+- Destination IP identifies the receiver.
+- IPv4 packets contain addressing information.
+- TTL (Time To Live) limits how many routers a packet can traverse.
+- Security analysts inspect Source IPs to identify where network traffic originates.
+
+## Practical
+
+- Opened Wireshark.
+- Applied the `ip` display filter.
+- Inspected IPv4 packet details.
+- Identified Source and Destination IP addresses.
+- Observed the TTL field.
+
+## Reflection
+
+Today I learned how devices communicate using IP addresses and how to identify the sender and receiver of network traffic in Wireshark.
