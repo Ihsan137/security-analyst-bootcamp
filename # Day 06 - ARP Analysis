@@ -1,0 +1,18 @@
+# Day 06 - ARP Analysis
+
+## Topic
+Address Resolution Protocol (ARP)
+
+## What I Learned
+- ARP stands for Address Resolution Protocol.
+- ARP maps an IP address to a MAC address.
+- ARP Request asks: "Who has this IP address?"
+- ARP Reply answers with the device's MAC address.
+- Every device on a local network has a unique MAC address.
+
+## Tools Used
+- Kali Linux
+- Wireshark
+
+## Key Observation
+I captured ARP Request and ARP Reply packets in Wireshark and observed how devices discover each other's MAC addresses on the local network.
