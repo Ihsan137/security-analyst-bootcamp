@@ -1,0 +1,16 @@
+## Topic
+Dynamic Host Configuration Protocol (DHCP)
+
+## What I Learned
+- DHCP automatically assigns network settings to devices.
+- The DORA process consists of Discover, Offer, Request, and Acknowledge.
+- Devices use DHCP to obtain an IP address automatically.
+- Broadcast messages are used when a device does not yet know the DHCP server.
+- I captured DHCP Request and DHCP ACK packets in Wireshark.
+
+## Tools Used
+- Kali Linux
+- Wireshark
+
+## Key Observation
+My Wireshark capture showed a DHCP Request from a device using source IP 0.0.0.0 and a DHCP ACK from the DHCP server confirming the IP assignment. This likely represented a DHCP lease renewal.
