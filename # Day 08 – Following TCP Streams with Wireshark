@@ -1,0 +1,27 @@
+
+## Objective
+Learn how to investigate a network conversation between a client and a server using Wireshark's Follow TCP Stream feature.
+
+## What I Learned
+- A TCP stream displays the complete conversation between two devices.
+- Follow TCP Stream isolates only the packets related to one communication.
+- TLS encrypts the data, making the conversation unreadable in plain text.
+- HTTP traffic can be viewed in plain text, while HTTPS traffic is protected by TLS.
+- Following TCP streams helps security analysts investigate incidents more efficiently.
+
+## Practical Exercise
+- Captured network traffic in Wireshark.
+- Applied a TLS filter.
+- Followed a TCP stream.
+- Observed an encrypted conversation between my computer and a remote server.
+- Compared encrypted communication with plain HTTP traffic from previous lessons.
+
+## Skills Practiced
+- Wireshark
+- TCP Stream Analysis
+- TLS Traffic Analysis
+- Network Investigation
+- Packet Analysis
+
+## Key Takeaway
+Following TCP streams allows security analysts to focus on a single network conversation instead of manually reviewing thousands of packets, making investigations faster and more effective.
