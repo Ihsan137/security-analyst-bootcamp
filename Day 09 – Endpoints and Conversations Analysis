@@ -1,0 +1,108 @@
+
+
+## Overview
+
+Today I learned how to use Wireshark's **Endpoints** and **Conversations** features to analyze network communications. These tools help Security Analysts quickly identify which devices are communicating and how much network traffic is exchanged without manually inspecting thousands of packets.
+
+---
+
+## Objectives
+
+- Understand what an endpoint is.
+- Understand what a network conversation is.
+- Learn how to identify communicating devices.
+- Analyze packet and byte counts between endpoints.
+- Practice using Wireshark Statistics for network investigations.
+
+---
+
+## Tools Used
+
+- Kali Linux
+- Wireshark
+
+---
+
+## Practical Activities
+
+### 1. Captured Network Traffic
+- Started packet capture on the **wlan0** interface.
+- Generated normal web traffic by browsing websites.
+- Stopped the capture after collecting packets.
+
+### 2. Endpoints Analysis
+Opened:
+
+Statistics → Endpoints
+
+Observed:
+- MAC addresses of devices on the network.
+- Number of transmitted (Tx) packets.
+- Number of received (Rx) packets.
+- Total bytes exchanged.
+
+### 3. Conversations Analysis
+Opened:
+
+Statistics → Conversations
+
+Observed:
+- Devices communicating with each other.
+- Total packets exchanged.
+- Total bytes transferred.
+- Traffic direction between both endpoints.
+
+---
+
+## What I Learned
+
+- An **Endpoint** is any device connected to a network, such as a computer, phone, router, printer, or server.
+- A **Conversation** represents communication between two endpoints.
+- The **Endpoints** window shows statistics for individual devices.
+- The **Conversations** window shows which devices communicated with each other.
+- Conversations help Security Analysts investigate network traffic much faster than checking packets individually.
+
+---
+
+## Why This Matters
+
+During a security investigation, analysts may receive packet captures containing thousands or even millions of packets. Instead of inspecting every packet manually, the **Conversations** feature quickly identifies the most active communications, making investigations faster and more efficient.
+
+---
+
+## Skills Gained
+
+- Wireshark navigation
+- Network traffic analysis
+- Endpoint identification
+- Conversation analysis
+- Packet investigation
+- SOC investigation fundamentals
+
+---
+
+## Files Included
+
+- endpoints.png
+- conversations.png
+- README.md
+
+---
+
+## Bootcamp Progress
+
+- ✅ Day 01 – Wireshark Basics
+- ✅ Day 02 – DNS Analysis
+- ✅ Day 03 – TCP Three-Way Handshake
+- ✅ Day 04 – HTTP vs HTTPS
+- ✅ Day 05 – IP Address Basics
+- ✅ Day 06 – ARP Analysis
+- ✅ Day 07 – DHCP Analysis
+- ✅ Week 1 Challenge Completed
+- ✅ Day 08 – TCP Stream Analysis
+- ✅ Day 09 – Endpoints and Conversations Analysis
+
+---
+
+**Security Analyst Bootcamp**  
+**Month 1 – Network Fundamentals with Wireshark**
