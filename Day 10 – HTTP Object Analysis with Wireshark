@@ -1,0 +1,148 @@
+## Overview
+
+Today I learned how to recover HTTP objects from captured network traffic using Wireshark. This technique allows Security Analysts and Digital Forensics Investigators to identify and recover files transferred over unencrypted HTTP connections.
+
+---
+
+## Objectives
+
+- Understand how HTTP transfers files.
+- Learn why HTTP traffic can be reconstructed.
+- Export HTTP objects from a packet capture.
+- Identify different file types transferred over HTTP.
+- Understand the importance of HTTPS in protecting transmitted data.
+
+---
+
+## Tools Used
+
+- Kali Linux
+- Wireshark
+- Mozilla Firefox
+- neverssl.com (HTTP website)
+
+---
+
+## Practical Activities
+
+### 1. Captured HTTP Traffic
+
+- Started packet capture on the **wlan0** interface.
+- Visited **http://neverssl.com** using Firefox.
+- Generated HTTP traffic.
+- Stopped the packet capture.
+
+---
+
+### 2. Filtered HTTP Packets
+
+Applied the following Wireshark display filter:
+
+```
+http
+```
+
+This displayed all HTTP requests and responses exchanged between my computer and the web server.
+
+---
+
+### 3. Exported HTTP Objects
+
+Opened:
+
+```
+File
+    └── Export Objects
+            └── HTTP
+```
+
+Recovered the following HTTP objects:
+
+| Filename | Content Type | Size |
+|----------|--------------|------|
+| / | text/html | 3,961 Bytes |
+| online | text/html | 300 Bytes |
+| online | text/html | 2,238 Bytes |
+| favicon.ico | image/vnd.microsoft.icon | 124 Bytes |
+
+---
+
+## What I Learned
+
+- HTTP sends data in plain text.
+- Wireshark can reconstruct files transferred over HTTP.
+- HTML pages and website resources can be recovered from packet captures.
+- The website favicon is transferred as a separate object.
+- HTTPS traffic cannot normally be reconstructed because it is encrypted using TLS.
+
+---
+
+## Why This Matters
+
+Recovering HTTP objects is an important technique in Digital Forensics and Incident Response. During an investigation, analysts may recover:
+
+- HTML pages
+- Images
+- JavaScript files
+- CSS files
+- PDF documents
+- Downloaded files
+- Malware delivered over HTTP
+
+This helps investigators understand what users accessed or downloaded during an incident.
+
+---
+
+## Skills Gained
+
+- HTTP Traffic Analysis
+- Exporting HTTP Objects
+- Digital Forensics
+- Incident Response
+- Network Traffic Investigation
+- Wireshark Object Recovery
+
+---
+
+## Files Included
+
+- README.md
+- export-http-objects.png
+
+---
+
+## Key Takeaways
+
+- HTTP traffic is not encrypted.
+- HTTPS protects data using TLS encryption.
+- Wireshark can recover files transmitted over HTTP.
+- Export Objects is a valuable feature for forensic investigations.
+- Security Analysts use this technique to investigate suspicious downloads and web activity.
+
+---
+
+## Bootcamp Progress
+
+- ✅ Day 01 – Wireshark Basics
+- ✅ Day 02 – DNS Analysis
+- ✅ Day 03 – TCP Three-Way Handshake
+- ✅ Day 04 – HTTP vs HTTPS
+- ✅ Day 05 – IP Address Basics
+- ✅ Day 06 – ARP Analysis
+- ✅ Day 07 – DHCP Analysis
+- ✅ Week 1 Challenge
+- ✅ Day 08 – TCP Stream Analysis
+- ✅ Day 09 – Endpoints and Conversations
+- ✅ Day 10 – HTTP Object Analysis
+
+---
+
+## Reflection
+
+Today's lesson showed me how Security Analysts can recover files transferred over unencrypted HTTP connections. I learned that while HTTP objects can be exported and analyzed, HTTPS traffic is protected by TLS encryption, making it much more secure. This practical exercise strengthened my understanding of network forensics and how Wireshark supports real-world incident response investigations.
+
+---
+
+**Security Analyst Bootcamp**  
+**Month 1 – Network Traffic Analysis with Wireshark**  
+**Goal:** Becoming a Professional SOC Analyst 🚀
