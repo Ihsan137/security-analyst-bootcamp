@@ -1,0 +1,120 @@
+## Objective
+
+Learn how HTTP requests and responses work and analyze them using Wireshark.
+
+## Tools Used
+
+* Kali Linux
+* Wireshark
+* Firefox Browser
+* neverssl.com
+
+## Activities Performed
+
+* Started packet capture on the `wlan0` interface.
+* Visited `http://neverssl.com` to generate HTTP traffic.
+* Applied the `http` display filter.
+* Investigated an HTTP GET request.
+* Expanded the Hypertext Transfer Protocol section to examine request headers.
+* Investigated the corresponding HTTP response.
+* Analyzed important HTTP response headers.
+
+## Key Findings
+
+### HTTP Request
+
+* Request Method: **GET**
+* Request URI: **/**
+* HTTP Version: **HTTP/1.1**
+* Host: **innerastoundingmajesticverse.neverssl.com**
+* User-Agent: **Mozilla Firefox on Linux**
+
+### HTTP Response
+
+* Status Code: **200 OK**
+* Server: **Apache**
+* Content-Type: **text/html**
+* Content-Encoding: **gzip**
+* Content-Length: **1900 bytes (compressed)**
+* File Data: **3961 bytes**
+
+## What I Learned
+
+* HTTP requests are sent by the client to request web resources.
+* HTTP responses are returned by the server.
+* A **200 OK** status confirms that the request was successful.
+* HTTP headers provide valuable information during security investigations.
+* Wireshark allows Security Analysts to reconstruct user web activity from captured network traffic.
+
+## Skills Gained
+
+* HTTP Protocol Analysis
+* HTTP Request Investigation
+* HTTP Response Investigation
+* HTTP Header Analysis
+* Wireshark Packet Analysis
+* Network Traffic Investigation
+
+## Conclusion
+
+Today I learned how to investigate both HTTP requests and HTTP responses in Wireshark. I can now identify what a user requested, how the server responded, and extract useful evidence that would help during a real-world Security Operations Center (SOC) investigation.
+## Objective
+
+Learn how HTTP requests and responses work and analyze them using Wireshark.
+
+## Tools Used
+
+* Kali Linux
+* Wireshark
+* Firefox Browser
+* neverssl.com
+
+## Activities Performed
+
+* Started packet capture on the `wlan0` interface.
+* Visited `http://neverssl.com` to generate HTTP traffic.
+* Applied the `http` display filter.
+* Investigated an HTTP GET request.
+* Expanded the Hypertext Transfer Protocol section to examine request headers.
+* Investigated the corresponding HTTP response.
+* Analyzed important HTTP response headers.
+
+## Key Findings
+
+### HTTP Request
+
+* Request Method: **GET**
+* Request URI: **/**
+* HTTP Version: **HTTP/1.1**
+* Host: **innerastoundingmajesticverse.neverssl.com**
+* User-Agent: **Mozilla Firefox on Linux**
+
+### HTTP Response
+
+* Status Code: **200 OK**
+* Server: **Apache**
+* Content-Type: **text/html**
+* Content-Encoding: **gzip**
+* Content-Length: **1900 bytes (compressed)**
+* File Data: **3961 bytes**
+
+## What I Learned
+
+* HTTP requests are sent by the client to request web resources.
+* HTTP responses are returned by the server.
+* A **200 OK** status confirms that the request was successful.
+* HTTP headers provide valuable information during security investigations.
+* Wireshark allows Security Analysts to reconstruct user web activity from captured network traffic.
+
+## Skills Gained
+
+* HTTP Protocol Analysis
+* HTTP Request Investigation
+* HTTP Response Investigation
+* HTTP Header Analysis
+* Wireshark Packet Analysis
+* Network Traffic Investigation
+
+## Conclusion
+
+Today I learned how to investigate both HTTP requests and HTTP responses in Wireshark. I can now identify what a user requested, how the server responded, and extract useful evidence that would help during a real-world Security Operations Center (SOC) investigation.
