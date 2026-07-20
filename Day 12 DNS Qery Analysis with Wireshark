@@ -1,0 +1,285 @@
+# Day 12 – DNS Query Analysis with Wireshark
+
+## Objective
+
+Learn how DNS queries work and analyze DNS traffic using Wireshark.
+
+---
+
+## Tools Used
+
+- Kali Linux
+- Wireshark
+- Firefox Browser
+
+---
+
+## Practical Lab
+
+### Step 1
+Open Wireshark and start capturing packets on the WLAN interface.
+
+### Step 2
+Visit a website.
+
+Example:
+
+github.com
+
+### Step 3
+Apply the display filter:
+
+```
+dns
+```
+
+### Step 4
+Select a DNS Query packet.
+
+### Step 5
+Expand:
+
+```
+Domain Name System (query)
+```
+
+### Step 6
+Expand:
+
+```
+Queries
+```
+
+Observe:
+
+- Domain Name
+- Type
+- Class
+
+---
+
+## Findings
+
+- Domain Requested:
+  github.com
+
+- Query Type:
+  Type A (IPv4 Address)
+
+- Class:
+  IN (Internet)
+
+- DNS Transaction ID:
+  0x465a
+
+---
+
+## What I Learned
+
+- DNS converts domain names into IP addresses.
+- DNS queries are sent before connecting to websites.
+- Every DNS request contains a unique Transaction ID.
+- Security Analysts inspect DNS traffic during investigations.
+- DNS analysis helps detect suspicious domains and malicious activity.
+
+---
+
+## Skills Practiced
+
+- DNS Packet Analysis
+- Wireshark Filtering
+- Network Investigation
+- Domain Name Resolution
+
+---
+
+## Day 12 Complete ✅
+
+## Objective
+
+Learn how DNS queries work and analyze DNS traffic using Wireshark.
+
+---
+
+## Tools Used
+
+- Kali Linux
+- Wireshark
+- Firefox Browser
+
+---
+
+## Practical Lab
+
+### Step 1
+Open Wireshark and start capturing packets on the WLAN interface.
+
+### Step 2
+Visit a website.
+
+Example:
+
+github.com
+
+### Step 3
+Apply the display filter:
+
+```
+dns
+```
+
+### Step 4
+Select a DNS Query packet.
+
+### Step 5
+Expand:
+
+```
+Domain Name System (query)
+```
+
+### Step 6
+Expand:
+
+```
+Queries
+```
+
+Observe:
+
+- Domain Name
+- Type
+- Class
+
+---
+
+## Findings
+
+- Domain Requested:
+  github.com
+
+- Query Type:
+  Type A (IPv4 Address)
+
+- Class:
+  IN (Internet)
+
+- DNS Transaction ID:
+  0x465a
+
+---
+
+## What I Learned
+
+- DNS converts domain names into IP addresses.
+- DNS queries are sent before connecting to websites.
+- Every DNS request contains a unique Transaction ID.
+- Security Analysts inspect DNS traffic during investigations.
+- DNS analysis helps detect suspicious domains and malicious activity.
+
+---
+
+## Skills Practiced
+
+- DNS Packet Analysis
+- Wireshark Filtering
+- Network Investigation
+- Domain Name Resolution
+
+---
+
+## Day 12 Complete ✅
+## Objective
+
+Learn how DNS queries work and analyze DNS traffic using Wireshark.
+
+---
+
+## Tools Used
+
+- Kali Linux
+- Wireshark
+- Firefox Browser
+
+---
+
+## Practical Lab
+
+### Step 1
+Open Wireshark and start capturing packets on the WLAN interface.
+
+### Step 2
+Visit a website.
+
+Example:
+
+github.com
+
+### Step 3
+Apply the display filter:
+
+```
+dns
+```
+
+### Step 4
+Select a DNS Query packet.
+
+### Step 5
+Expand:
+
+```
+Domain Name System (query)
+```
+
+### Step 6
+Expand:
+
+```
+Queries
+```
+
+Observe:
+
+- Domain Name
+- Type
+- Class
+
+---
+
+## Findings
+
+- Domain Requested:
+  github.com
+
+- Query Type:
+  Type A (IPv4 Address)
+
+- Class:
+  IN (Internet)
+
+- DNS Transaction ID:
+  0x465a
+
+---
+
+## What I Learned
+
+- DNS converts domain names into IP addresses.
+- DNS queries are sent before connecting to websites.
+- Every DNS request contains a unique Transaction ID.
+- Security Analysts inspect DNS traffic during investigations.
+- DNS analysis helps detect suspicious domains and malicious activity.
+
+---
+
+## Skills Practiced
+
+- DNS Packet Analysis
+- Wireshark Filtering
+- Network Investigation
+- Domain Name Resolution
+
+---
+
+## Day 12 Complete ✅
