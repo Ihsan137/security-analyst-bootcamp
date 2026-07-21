@@ -1,0 +1,82 @@
+## Objective
+
+Learn how ICMP works and analyze ICMP Echo Request and Echo Reply packets using Wireshark.
+
+## Tools Used
+
+* Kali Linux
+* Wireshark
+* Terminal
+* Ping command
+
+
+## Practical Lab
+
+### Step 1
+
+Started packet capture on the **wlan0** interface.
+
+### Step 2
+
+Generated ICMP traffic using:
+
+bash
+ping google.com -c 4
+
+
+### Step 3
+
+Stopped the packet capture.
+
+### Step 4
+
+Applied the following display filter:
+
+icmp
+
+### Step 5
+
+Selected an **ICMP Echo Request** packet and examined:
+
+* Type
+* Code
+* Checksum
+* Identifier
+* Sequence Number
+* Response Packet
+
+## Findings
+
+* Protocol: ICMP
+* Type: Echo (Ping) Request (Type 8)
+* Code: 0
+* Checksum Status: Good
+* Identifier: 1
+* Sequence Number: 1
+* Response Packet: Packet 67
+
+
+## Key Concepts Learned
+
+* ICMP stands for **Internet Control Message Protocol**.
+* ICMP is used to test connectivity and troubleshoot network problems.
+* ICMP does not use TCP or UDP ports.
+* Echo Request checks whether a destination device is reachable.
+* Echo Reply confirms that the destination device is reachable.
+* Sequence Numbers help match requests with replies.
+* Checksum verifies packet integrity.
+
+## Skills Gained
+
+* Capturing ICMP traffic
+* Filtering ICMP packets
+* Reading packet fields
+* Understanding network troubleshooting
+* Basic packet analysis with Wireshark
+
+## Screenshot
+
+Include the screenshot showing the **ICMP Echo Request** packet with the **Internet Control Message Protocol** section expanded.
+
+
+**Bootcamp Progress:** Day 13 ✅
