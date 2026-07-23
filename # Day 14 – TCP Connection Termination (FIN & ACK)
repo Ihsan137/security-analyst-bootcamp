@@ -1,0 +1,57 @@
+# Day 14 – TCP Connection Termination (FIN & ACK)
+
+## Objective
+Learn how TCP connections are gracefully terminated by analyzing the FIN and ACK flags in Wireshark.
+
+
+## What I Learned
+
+- TCP stands for Transmission Control Protocol.
+- FIN is used to indicate that a device has finished sending data and wants to close the connection.
+- ACK (Acknowledgment) confirms that data has been received successfully.
+- TCP connections are closed gracefully using the FIN and ACK process.
+- HTTPS traffic commonly uses destination port 443.
+
+## Practical Lab
+
+### Tool Used
+- Wireshark
+- Kali Linux
+
+### Filter Used
+
+tcp.flags.fin==1
+
+
+### Steps Performed
+
+1. Opened Wireshark.
+2. Selected the wlan0 interface.
+3. Started capturing packets.
+4. Visited a website to generate TCP traffic.
+5. Stopped the capture.
+6. Applied the filter:
+
+tcp.flags.fin==1
+
+7. Selected a packet containing the FIN flag.
+8. Expanded the **Transmission Control Protocol** section.
+9. Examined the Source Port, Destination Port, Sequence Number, Acknowledgment Number, and TCP Flags.
+
+
+## Key Findings
+
+- The packet contained the **FIN** and **ACK** flags.
+- Source Port: **51002**
+- Destination Port: **443 (HTTPS)**
+- FIN indicates the sender wants to terminate the connection.
+- ACK confirms previously received packets.
+- Security analysts use TCP flags to understand how network sessions begin and end during investigations.
+
+## Skills Gained
+
+- TCP Packet Analysis
+- TCP Flags Investigation
+- FIN and ACK Analysis
+- HTTPS Traffic Analysis
+- Wireshark Packet Inspectiom
