@@ -1,0 +1,55 @@
+## Objective
+Learn how TCP Reset (RST) packets terminate a connection immediately and understand their importance during network investigations.
+## What I Learned
+
+- RST stands for Reset.
+- RST immediately terminates a TCP connection.
+- FIN closes a connection gracefully, while RST aborts it instantly.
+- RST packets may occur because of firewalls, closed ports, blocked connections, or application failures.
+- Security analysts use RST packets to investigate interrupted or suspicious network sessions.
+
+## Practical Lab
+
+### Tool Used
+- Wireshark
+- Kali Linux
+
+### Filter Used
+text
+tcp.flags.reset==1
+
+### Steps Performed
+
+1. Opened Wireshark.
+2. Selected the wlan0 interface.
+3. Started capturing packets.
+4. Generated network traffic.
+5. Applied the filter:
+text
+tcp.flags.reset==1
+
+6. Selected a packet containing the **RST** flag.
+7. Expanded the **Transmission Control Protocol** section.
+8. Examined the Source Port, Destination Port, Sequence Number, Acknowledgment Number, and TCP Flags.
+
+
+## Key Findings
+
+- The selected packet contained the **RST** flag.
+- Source Port: **33316**
+- Destination Port: **443 (HTTPS)**
+- Sequence Number: **2069**
+- The connection was terminated immediately instead of being closed gracefully.
+
+
+## Skills Gained
+
+- TCP Reset Packet Analysis
+- TCP Flags Investigation
+- Wireshark Packet Inspection
+- HTTPS Traffic Analysis
+- Network Session Investigation
+
+
+
+Day 15 completed ✅
