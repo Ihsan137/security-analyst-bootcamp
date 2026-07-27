@@ -1,0 +1,62 @@
+## Objective
+
+Learn how TCP Duplicate ACK packets indicate missing packets during communication and understand how they help Security Analysts identify packet loss and network reliability issues.
+
+
+## What I Learned
+
+* A Duplicate ACK is sent by the receiver when a TCP packet is missing.
+* The receiver repeatedly acknowledges the last successfully received packet while waiting for the missing packet.
+* Duplicate ACKs help the sender recognize packet loss.
+* Multiple Duplicate ACKs can trigger a TCP Retransmission.
+* Security Analysts use Duplicate ACKs to investigate packet loss, network congestion, and communication problems.
+
+
+## Practical Lab
+
+### Tool Used
+
+* Wireshark
+* Kali Linux
+
+### Filter Used
+
+text
+tcp.analysis.duplicate_ack
+
+
+### Steps Performed
+
+1. Opened Wireshark.
+2. Selected the **wlan0** interface.
+3. Started capturing network traffic.
+4. Generated network traffic by browsing websites.
+5. Applied the filter:
+
+```text
+tcp.analysis.duplicate_ack
+```
+
+6. Selected a packet identified as **TCP Duplicate ACK**.
+7. Expanded the **Transmission Control Protocol (TCP)** section.
+8. Examined the Source Port, Destination Port, Sequence Number, Acknowledgment Number, ACK Flag, and TCP Options.
+
+
+## Key Findings
+
+* The selected packet was identified as a **TCP Duplicate ACK**.
+* Source Port: **56740**
+* Destination Port: **443 (HTTPS)**
+* Sequence Number: **29**
+* Acknowledgment Number: **25**
+* The receiver repeatedly acknowledged the last successfully received packet because a previous packet was missing.
+
+## Skills Gained
+
+* TCP Duplicate ACK Analysis
+* Wireshark Packet Inspection
+* TCP Sequence and Acknowledgment Analysis
+* Packet Loss Investigation
+* Network Troubleshooting
+
+
