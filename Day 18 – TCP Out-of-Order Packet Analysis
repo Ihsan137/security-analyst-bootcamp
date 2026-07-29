@@ -1,0 +1,135 @@
+# Day 18 – TCP Out-of-Order Packet Analysis
+
+## Objective
+Learn how TCP Out-of-Order packets occur, understand why packets sometimes arrive in the wrong order, and analyze them using Wireshark.
+
+---
+
+## What I Learned
+
+- TCP Out-of-Order packets arrive in a different order than expected.
+- Out-of-Order packets may occur because of network congestion, different routing paths, or transmission delays.
+- Wireshark can detect these packets during packet analysis.
+- Out-of-Order packets do not always indicate packet loss.
+- Security analysts use Out-of-Order analysis to troubleshoot network performance and communication issues.
+
+---
+
+## Practical Lab
+
+### Tool Used
+- Wireshark
+- Kali Linux
+
+### Filter Used
+```text
+tcp.analysis.out_of_order
+```
+
+### Steps Performed
+
+1. Opened Wireshark.
+2. Selected the wlan0 interface.
+3. Started capturing network traffic.
+4. Generated network activity by browsing websites.
+5. Applied the filter:
+```text
+tcp.analysis.out_of_order
+```
+6. Opened one of the displayed TCP packets.
+7. Expanded the **Transmission Control Protocol** section.
+8. Examined the Source Port, Destination Port, Sequence Number, Acknowledgment Number, TCP Length, and TCP Flags.
+
+---
+
+## Key Findings
+
+- Source Port: **443 (HTTPS)**
+- Destination Port: **35136**
+- Sequence Number: **50837**
+- Acknowledgment Number: **15921**
+- TCP Segment Length: **1388 bytes**
+- ACK Flag was present.
+- The capture demonstrated how TCP packets can be inspected when investigating packet ordering during network communication.
+
+---
+
+## Skills Gained
+
+- TCP Out-of-Order Analysis
+- Wireshark Packet Inspection
+- TCP Sequence Number Analysis
+- Network Troubleshooting
+- Packet Flow Investigation
+
+---
+
+## Screenshot
+
+Add your Day 18 TCP Out-of-Order analysis screenshot here.
+
+---
+
+Day 18 completed ✅
+## Objective
+Learn how TCP Out-of-Order packets occur, understand why packets sometimes arrive in the wrong order, and analyze them using Wireshark.
+
+
+
+## What I Learned
+
+- TCP Out-of-Order packets arrive in a different order than expected.
+- Out-of-Order packets may occur because of network congestion, different routing paths, or transmission delays.
+- Wireshark can detect these packets during packet analysis.
+- Out-of-Order packets do not always indicate packet loss.
+- Security analysts use Out-of-Order analysis to troubleshoot network performance and communication issues.
+
+
+
+## Practical Lab
+
+### Tool Used
+- Wireshark
+- Kali Linux
+
+### Filter Used
+text
+tcp.analysis.out_of_order
+
+
+### Steps Performed
+
+1. Opened Wireshark.
+2. Selected the wlan0 interface.
+3. Started capturing network traffic.
+4. Generated network activity by browsing websites.
+5. Applied the filter:
+text
+tcp.analysis.out_of_order
+
+6. Opened one of the displayed TCP packets.
+7. Expanded the **Transmission Control Protocol** section.
+8. Examined the Source Port, Destination Port, Sequence Number, Acknowledgment Number, TCP Length, and TCP Flags.
+
+
+## Key Findings
+
+- Source Port: **443 (HTTPS)**
+- Destination Port: **35136**
+- Sequence Number: **50837**
+- Acknowledgment Number: **15921**
+- TCP Segment Length: **1388 bytes**
+- ACK Flag was present.
+- The capture demonstrated how TCP packets can be inspected when investigating packet ordering during network communication.
+
+
+## Skills Gained
+
+- TCP Out-of-Order Analysis
+- Wireshark Packet Inspection
+- TCP Sequence Number Analysis
+- Network Troubleshooting
+- Packet Flow Investigation
+
+
+Day 18 completed ✅
