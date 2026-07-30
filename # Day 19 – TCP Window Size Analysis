@@ -1,0 +1,21 @@
+## Objective
+Learn how TCP Window Size controls the amount of data that can be transmitted before receiving an acknowledgment (ACK) and 
+understand its importance in network performance analysis.
+
+## What I Learned
+
+- TCP Window Size controls how much data can be sent before an acknowledgment is received.
+- A larger Window Size generally improves data transfer performance.
+- A very small Window Size can slow down communication because fewer bytes are transmitted before waiting for an ACK.
+- Wireshark displays the Window, Calculated Window Size, and Window Size Scaling Factor within the TCP header.
+- Security analysts analyze Window Size to troubleshoot network performance and identify communication bottlenecks.
+
+## Practical Lab
+
+### Tool Used
+- Wireshark
+- Kali Linux
+
+### Filter Used
+text
+tcp
