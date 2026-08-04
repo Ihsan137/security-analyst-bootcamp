@@ -1,0 +1,50 @@
+## Objective
+Learn how TCP Acknowledgment (ACK) packets confirm successful data delivery and understand their role in reliable TCP communication.
+
+
+## What I Learned
+
+- ACK packets confirm that previously transmitted data has been received successfully.
+- TCP uses acknowledgment numbers to ensure reliable communication.
+- The TCP Window Size controls how much data can be sent before another acknowledgment is required.
+- ACK packets help maintain synchronized communication between the sender and receiver.
+- Packet analysis helps security analysts understand network behavior and troubleshoot communication issues.
+
+
+## Practical Lab
+
+### Tool Used
+- Wireshark
+- Kali Linux
+
+### Steps Performed
+
+1. Opened Wireshark.
+2. Selected the **wlan0** interface.
+3. Started packet capture.
+4. Generated HTTPS network traffic.
+5. Selected a TCP ACK packet.
+6. Expanded the **Transmission Control Protocol** section.
+7. Examined the Source Port, Destination Port, Sequence Number, Acknowledgment Number, TCP Window Size, and TCP Flags.
+
+
+## Key Findings
+
+- The selected packet contained the **ACK** flag.
+- Source Port: **46176**
+- Destination Port: **443 (HTTPS)**
+- ACK Number: **25**
+- Window Size: **72**
+- The packet confirmed successful receipt of previously transmitted data.
+
+
+## Skills Gained
+
+- TCP ACK Packet Analysis
+- TCP Communication
+- Wireshark Packet Inspection
+- Network Traffic Analysis
+- Basic Network Troubleshooting
+
+
+Day 21 completed ✅
