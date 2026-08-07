@@ -1,0 +1,33 @@
+## Objective
+
+Learn what File Transfer Protocol (FTP) is, understand how it transfers files across a network, identify its default communication port, and recognize why it is considered an insecure protocol.
+
+
+## What I Learned
+
+* FTP stands for **File Transfer Protocol**.
+* FTP is used to transfer files between a client and a server.
+* FTP uses **Port 21** for the control connection.
+* FTP does not encrypt usernames, passwords, or transferred files.
+* Because FTP transmits data in plain text, it is vulnerable to interception.
+* Secure alternatives such as **SFTP** and **FTPS** provide encrypted file transfers and are recommended for modern environments.
+
+
+## Theory Summary
+
+FTP is one of the oldest file transfer protocols and is still found in some legacy systems. While it is simple to use, its lack of encryption makes it unsuitable for transferring sensitive information over untrusted networks. Security analysts should understand FTP because attackers may exploit unsecured FTP services to capture credentials or transfer unauthorized files.
+
+
+## Skills Gained
+
+* Understanding FTP Fundamentals
+* File Transfer Protocol Concepts
+* Network Protocol Identification
+* Recognizing Insecure Protocols
+* Understanding Secure FTP Alternatives (SFTP and FTPS)
+
+
+## Screenshot
+
+Add your Day 22 FTP practical screenshot here. no practical for today 
+
