@@ -1,0 +1,60 @@
+## Objective
+
+Learn about SMTP email communication and understand how modern webmail services protect email traffic using TLS encryption.
+
+## What I Learned
+
+* SMTP stands for Simple Mail Transfer Protocol.
+* SMTP is used to send and transfer email messages.
+* Common SMTP ports include 25, 465, and 587.
+* Modern webmail services such as Gmail use HTTPS/TLS encryption.
+* TLS protects communication by encrypting application data during transmission.
+* Encrypted traffic may appear as Application Data in Wireshark instead of showing the actual message contents.
+* Security analysts need to recognize and investigate encrypted network traffic during security investigatio
+
+## Practical Lab
+
+### Tool Used
+
+* Wireshark
+* Kali Linux
+* Gmail
+
+### Filter Used
+
+```text
+tls
+```
+
+### Steps Performed
+
+1. Opened Wireshark.
+2. Selected the wlan0 interface.
+3. Started capturing network traffic.
+4. Opened Gmail and generated email-related web traffic.
+5. Stopped the packet capture.
+6. Applied the filter:
+
+```text
+tls
+```
+
+7. Selected a TLS packet.
+8. Examined the Transport Layer Security section and the encrypted application data.
+
+## Key Findings
+
+* The captured traffic was identified as **TLSv1.2**.
+* The communication was using **TCP port 443**.
+* Wireshark displayed the traffic as **Application Data**.
+* The actual email content was not visible because the communication was encrypted.
+* This demonstrated how TLS helps protect information during network transmissio
+
+## Skills Gained
+
+* SMTP Fundamentals
+* TLS Traffic Analysis
+* HTTPS Traffic Analysis
+* Wireshark Packet Inspection
+* Encrypted Traffic Analysis
+* Network Security Investigation
