@@ -1,0 +1,62 @@
+## Objective
+
+Learn how the TLS handshake establishes the security parameters required for encrypted communication and understand the roles of Client Hello, Server Hello, TLS version, and SNI.
+
+## What I Learned
+
+* Client Hello is the first message sent by the client to begin the TLS handshake.
+* Server Hello is the server's response to the Client Hello.
+* TLS 1.3 was observed during the packet capture.
+* SNI (Server Name Indication) helps identify the hostname the client is trying to connect to.
+* The TLS handshake allows the client and server to establish security parameters before exchanging encrypted application data.
+* Security analysts can use Wireshark to investigate TLS handshakes and understand how secure connections are established.
+
+## Practical Lab
+
+### Tool Used
+
+* Wireshark
+* Kali Linux
+* Firefox
+
+### Filter Used
+
+```text
+tls.handshake
+```
+
+### Steps Performed
+
+1. Opened Wireshark.
+2. Selected the wlan0 interface.
+3. Started capturing network traffic.
+4. Opened Gmail and generated HTTPS traffic.
+5. Stopped the packet capture.
+6. Applied the filter:
+
+```text
+tls.handshake
+```
+
+7. Identified Client Hello and Server Hello packets.
+8. Examined the TLS handshake information.
+
+
+## Key Findings
+
+* Client Hello packets were captured.
+* Server Hello packets were captured.
+* TLSv1.3 traffic was visible.
+* SNI values such as `mail.google.com` were visible in the capture.
+* The capture demonstrated the communication between the client and server during the TLS handshake.
+
+
+## Skills Gained
+
+* TLS Handshake Analysis
+* Client/Server Communication Analysis
+* TLS 1.3 Analysis
+* SNI Analysis
+* Wireshark Packet Inspection
+* Encrypted Traffic Investigation
+
