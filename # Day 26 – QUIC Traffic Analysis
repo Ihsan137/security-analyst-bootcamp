@@ -1,0 +1,66 @@
+
+## Objective
+
+Learn the basics of QUIC, understand how it uses UDP for communication, and identify QUIC traffic in Wireshark.
+
+
+## What I Learned
+
+* QUIC stands for **Quick UDP Internet Connections**.
+* QUIC is a modern transport protocol that operates over **UDP**.
+* QUIC commonly uses **UDP port 443** for web traffic.
+* **HTTP/3 uses QUIC** for communication.
+* QUIC is designed to provide fast, secure, and reliable communication.
+* QUIC uses a handshake process to establish connections and negotiate security.
+* ACK packets are used to acknowledge received packets.
+* DCID means **Destination Connection ID**.
+* SCID means **Source Connection ID**.
+* QUIC traffic can appear in Wireshark even though it uses UDP instead of TCP.
+
+## Practical Lab
+
+### Tool Used
+
+* Wireshark
+* Kali Linux
+
+### Filter Used
+
+```text
+quic
+```
+
+### Steps Performed
+
+1. Opened Wireshark.
+2. Selected the **wlan0** interface.
+3. Started capturing network traffic.
+4. Applied the filter:
+
+```text
+quic
+```
+
+5. Identified QUIC packets.
+6. Examined **Initial** and **Handshake** packets.
+7. Inspected **ACK**, **CRYPTO**, **PADDING**, and **Protected Payload** information.
+8. Examined the QUIC connection identifiers and communication between the client and server.
+
+## Key Findings
+
+* QUIC traffic was successfully identified in Wireshark.
+* The traffic used **UDP** rather than TCP.
+* The destination port was **443**, which is commonly used by QUIC for web traffic.
+* The capture contained **Initial, Handshake, ACK, CRYPTO, PADDING, and Protected Payload** packets.
+* QUIC is closely associated with **HTTP/3**.
+* Recognizing QUIC traffic is important because encrypted web traffic is not always carried over traditional TCP-based HTTPS.
+
+## Skills Gained
+
+* QUIC Protocol Analysis
+* UDP Traffic Analysis
+* HTTP/3 Awareness
+* Wireshark Packet Inspection
+* Encrypted Traffic Identification
+* Network Protocol Investigation
+
