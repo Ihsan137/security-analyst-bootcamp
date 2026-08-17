@@ -1,0 +1,73 @@
+## Objective
+
+Learn how Network Time Protocol (NTP) is used to synchronize the time of computers and network devices and analyze NTP traffic using Wireshark.
+
+
+## What I Learned
+
+* NTP stands for **Network Time Protocol**.
+* NTP is used to synchronize the clocks of computers and network devices.
+* NTP normally uses **UDP port 123**.
+* The NTP client sends a request to an NTP server.
+* The NTP server responds with time information.
+* Accurate time synchronization is important for network monitoring, troubleshooting, authentication, and security investigations.
+* Wireshark can be used to identify NTP clients, servers, requests, and responses.
+* An **ICMP Destination Unreachable (Port Unreachable)** response can indicate that an NTP destination or UDP port was unreachable.
+
+## Practical Lab
+
+### Tool Used
+
+* Wireshark
+* Kali Linux
+
+### Filter Used
+
+```text
+ntp
+```
+
+### Steps Performed
+
+1. Opened Wireshark.
+2. Selected the **wlan0** interface.
+3. Started capturing network traffic.
+4. Allowed normal network activity to generate NTP traffic.
+5. Applied the filter:
+
+```text
+ntp
+```
+
+6. Examined the NTP packets.
+7. Inspected the source and destination addresses.
+8. Checked the UDP source and destination ports.
+9. Observed NTP Version 4 client and server packets.
+10. Examined the ICMP Destination Unreachable packet associated with the traffic.
+
+
+## Key Findings
+
+* NTP Version: **4**
+* Transport Protocol: **UDP**
+* NTP Port: **123**
+* Example NTP server: **176.97.192.150**
+* The capture showed both **NTP client** and **NTP server** traffic.
+* An **ICMP Destination Unreachable (Port Unreachable)** packet was also observed.
+
+
+## Skills Gained
+
+* NTP Traffic Analysis
+* UDP Traffic Analysis
+* Wireshark Filtering
+* Client-Server Communication Analysis
+* ICMP Error Analysis
+* Network Troubleshooting
+
+
+## Screenshot
+
+Add the Day 27 NTP Wireshark screenshot here.
+
+
