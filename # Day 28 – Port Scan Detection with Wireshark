@@ -1,0 +1,98 @@
+## Objective
+
+Learn how to identify port scanning activity and determine whether TCP ports are open or closed by analyzing SYN, SYN/ACK, and RST packets in Wireshark.
+
+
+## What I Learned
+
+* A port scan checks multiple ports on a device to identify available services.
+* A TCP SYN packet can be used to initiate a connection and check whether a port is accepting connections.
+* SYN → SYN/ACK → ACK indicates that a TCP connection was successfully established and the port is open.
+* SYN → RST/ACK indicates that the connection was rejected and the port is closed.
+* Security analysts can use Wireshark to investigate multiple connection attempts and identify possible scanning activity.
+
+
+## Practical Lab
+
+### Tool Used
+
+* Wireshark
+* Kali Linux
+* Bash
+
+### Interface Used
+
+```text
+lo (Loopback)
+```
+
+### Filter Used
+
+```text
+tcp.flags.syn == 1
+```
+
+### Ports Tested
+
+```text
+40410
+40411
+40412
+40413
+40414
+40415
+```
+
+### Steps Performed
+
+1. Checked the listening ports on my Kali Linux system using:
+
+```text
+ss -tuln
+```
+
+2. Identified TCP port **40413** as a listening port.
+3. Opened Wireshark and selected the **Loopback (lo)** interface.
+4. Started a packet capture.
+5. Generated connection attempts to ports 40410–40415 using Bash.
+6. Stopped the capture.
+7. Applied the filter:
+
+```text
+tcp.flags.syn == 1
+```
+
+8. Compared the TCP responses for each tested port.
+9. Examined the TCP three-way handshake for port 40413.
+
+## Key Findings
+
+* Port **40413** was open.
+* Ports **40410, 40411, 40412, 40414, and 40415** were closed.
+* Port 40413 completed the TCP three-way handshake:
+
+```text
+SYN → SYN/ACK → ACK
+```
+
+* The closed ports responded with:
+
+```text
+SYN → RST/ACK
+```
+
+* The capture demonstrated how multiple connection attempts can be analyzed to identify port scanning behavior.
+
+
+## Skills Gained
+
+* Port Scan Detection
+* TCP Three-Way Handshake Analysis
+* Open and Closed Port Identification
+* Wireshark Filtering
+* TCP SYN Analysis
+* Network Security Investigation
+
+## Screenshot
+
+Add your Day 28 Wireshark port scan screenshots here.
